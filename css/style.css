@@ -993,6 +993,7 @@ h1{
 	}
 
 	.card{
+        cursor: pointer;
 		display: flex;
 		flex-direction: column;
 		flex: 1;
@@ -1465,24 +1466,47 @@ h1{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 767px)  {  
 
-    #men-body hr{
+    #men-body hr, #contact-body hr{
         width: 50%;
         margin-left: 25%;
         margin-top: 15%;
         display: none;
-        }
+                    }
 
-  nav{
-    margin-top: 1%;
-    margin-left: 75%;
-    width: 5%;
-  }
+                    
+            #men-store-header nav, #faq-header nav{
+                margin-left: 90%;
+            }
 
- #shopping-header #links-container a{
-font-size: 1.2rem !important;
- }
+            #contact-header nav{
+                margin-left: 88%;
+            }
 
+            nav{
+                margin-top: 1%;
+                margin-left: 75%;
+                width: 5%;
+            }
 
+            #shopping-header #links-container a{
+            font-size: 1.2rem !important;
+            }
+
+            #contact-form input{
+                padding: 1rem;
+                width: 50%;
+            }
+
+            #contact-form textarea{
+                width: 50%;
+            }
+
+            #contact{
+                margin-left: 25%;
+
+            }
+
+         
 
   #login-body *{
     overflow: unset;
@@ -1514,15 +1538,15 @@ font-size: 1.2rem !important;
     }
 
    
-   
+   #contact-form button{
+    width: 60% !important;
+   }
 
     #myDropdown{
         display: unset;
         margin-left: -75% !important;
         width: 80%;
     }
-
-    
 
     .fa-bars{
         display: none !important;
@@ -1685,13 +1709,11 @@ font-size: 1.2rem !important;
     #form-control{
         font-size: 1rem;
     }
-
     .fa-user{
         font-size: 2rem !important;
         margin-top: -1%;
-        margin-left: -80%;
+        margin-left: -75%;
 }
-
         input, textarea{
             width: 80%;
         }
@@ -2110,7 +2132,9 @@ font-size: 1.2rem !important;
    #men-body *:not(.card), #women-body *:not(.card){
     overflow: hidden;
    }
-
+   #contact-header nav{
+    margin-left: 8%;
+}
     nav{
         display: unset;
         margin-top: 15%;
@@ -2561,6 +2585,10 @@ text-align: left;
 @media only screen and (min-width: 1439px) {
     
     #shop-main-container h1{margin-top: -4%;}
+    #contact-header nav{
+        margin-left: -55%;
+    }
+
     
         nav{
             margin-top: 55%;
