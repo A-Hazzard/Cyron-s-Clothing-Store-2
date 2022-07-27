@@ -1464,7 +1464,42 @@ h1{
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 767px)  {
-  
+    hr{
+        margin-top: 5%;
+    }
+  nav{
+    margin-top: -8%;
+    margin-left: -8%;
+  }
+
+  #login-body *{
+    overflow: unset;
+  }
+    .login-main{
+        width: 60%;
+        margin: 5% auto;
+        
+    }
+
+    .login-main h1{
+        font-weight: bold;
+    }
+
+    .login-main input{
+        font-size: 1.5rem;
+    }
+
+    #signInBox{
+        font-size: 1rem;
+        margin-left: 12%;
+    }
+
+    #checkbox{
+        margin-left: -35%;
+        position: absolute;
+    }
+
+   
    
 
     #myDropdown{
@@ -2059,6 +2094,55 @@ input, textarea{
       } 
     
 @media only screen and (min-width: 1023px){
+    hr{
+        margin-top: 6%;
+    }
+    nav{
+        margin-top: -6%;
+        margin-left: unset;
+      }
+    
+        .login-main{
+            width: 60%;
+            margin: 10% auto;
+            
+        }
+    
+        .login-main h1{
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .login-cta{
+            font-size: 1.5rem;
+        }
+    
+        .login-main input{
+            font-size: 1.8rem;
+        }
+    
+        #signInBox{
+            font-size: 1.5rem;
+            margin-left: 12%;
+        }
+    
+        #checkbox{
+            margin-left: -35%;
+            position: absolute;
+            height: 1.2rem;
+        }
+
+        #forgotPassword{
+            margin-left: 25%;
+        }
+
+        #login-form #submit{
+            font-size: 1.5rem;
+        }
+
+        .register-container p{font-size: 2rem;}
+        .register-container span{font-size: 1.5rem ;}
+.register-container a{font-size: 1.8rem;}
 
     input, textarea{
         width: 80%;
@@ -2462,8 +2546,47 @@ text-align: left;
  
  nav{
     width: 100%;
-    margin-left: 95%;
+    margin-left: 88%;
  }
+
+ hr{
+    width: 50%;
+    margin-left: var(--hr-margin-left) ;
+ }
+
+
+.login-main h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.login-cta{
+    font-size: 1.8rem;
+}
+
+.login-main input{
+    font-size: 2rem;
+}
+
+#signInBox{
+    font-size: 1.8rem;
+    margin-left: 12%;
+}
+
+#checkbox{
+    margin-left: -20%;
+    position: absolute;
+    height: 1.5rem;
+}
+
+
+#login-form #submit{
+    font-size: 1.5rem;
+}
+
+.register-container p{font-size: 2.5rem;}
+.register-container span{font-size: 2rem ;}
+.register-container a{font-size: 1.8rem;}
  
  @keyframes animatedBannerImg{
      
@@ -2490,7 +2613,7 @@ text-align: left;
         width: 50%;
     }
 
-    button:last-of-type{
+    button:last-of-type:not(#login-form button){
         width: 50% !important;
     }
 
@@ -2501,12 +2624,6 @@ text-align: left;
     margin-left: 32%;
    }
     
-    hr{
-        width: calc(var(--hr-width) - 5%);
-        
-        margin-left: calc(var(--hr-margin-left) + 5%);
-       
-    }
     
     .fa-bag-shopping{
       
