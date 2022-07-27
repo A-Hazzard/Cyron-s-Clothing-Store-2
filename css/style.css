@@ -385,6 +385,11 @@ h1{
         margin-top: 1%;
    width: 100%;
     }
+
+    nav a:hover{
+        border-radius: 5px;
+    }
+
       .dropdown-content {
         position: absolute;
         font-family: 'Poppins', sans-serif;
