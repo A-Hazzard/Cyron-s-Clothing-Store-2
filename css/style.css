@@ -387,7 +387,7 @@ h1{
     }
       .dropdown-content {
         position: absolute;
-        
+        font-family: 'Poppins', sans-serif;
         display: none;
       }
       .show {display: block;}
@@ -973,6 +973,8 @@ h1{
         font-size: var(--answer-font-size);
     }
 
+    #shop-main-container h1{margin-left: 1%;}
+
 	#shop-main-container .mini-nav{
 		text-align: center;
 		display: block;
@@ -1047,9 +1049,7 @@ h1{
 		padding: 5%;
 	}
 
-	.store-main .login-quote{
 
-	}
 
 	select{
 		margin-top: 2%;
@@ -1308,6 +1308,8 @@ h1{
         font-size: var(--answer-font-size);
     }
     
+    #women-body .show, #men-body .show {margin-left: -20%;}
+    
       }   
 @media only screen and (min-width: 359px){
 
@@ -1339,8 +1341,8 @@ h1{
         margin-top: 1%;
     }
     #shop-main-container h1{
-        padding: 5%;
         letter-spacing: .01rem;
+        margin: unset;
     }
     #links-container{
         margin-left: 10%;
@@ -1409,6 +1411,7 @@ h1{
         font-size: .8rem;
     }
 
+    .show #links-container{margin-left: -2%;}
 
 }
                   
@@ -1695,7 +1698,10 @@ h1{
 
     #shop-main-container h1{
         font-size: 3rem;
+        margin-bottom: 2%;
     }
+
+    
 
     .mini-nav{
         font-size: 1.5rem;
@@ -1726,6 +1732,15 @@ h1{
         width: 80%;
         object-fit: contain;
        margin-left: 5%;
+    }
+
+    header *{
+        overflow: unset;
+    }
+
+    #shopping-header #links-container{width: 100vw;}
+    #shopping-header nav{
+        margin-left: 74%;
     }
    
  
@@ -2130,7 +2145,7 @@ h1{
     
 @media only screen and (min-width: 1023px){
    #men-body *:not(.card), #women-body *:not(.card){
-    overflow: hidden;
+    overflow-x: hidden;
    }
    #contact-header nav{
     margin-left: 8%;
@@ -2141,7 +2156,9 @@ h1{
         margin-left: 5%;
 
       }
-    
+
+      #shopping-header nav{margin-left: -5%;}
+     
         .login-main{
             width: 60%;
             margin: 10% auto;
@@ -2234,6 +2251,7 @@ h1{
     #links-container{
         margin-left: 32%;
     }
+
     
    
        
@@ -2386,6 +2404,8 @@ text-align: left;
     .product-card{
         margin-left: 10% !important;
     }
+
+   
     
 }   
 
@@ -2526,10 +2546,37 @@ text-align: left;
 } 
 
 @media only screen and (min-width: 1365px) {
-   
-   .nav-links a{
-    font-size: 2rem;
-   }
+  
+
+   #index nav{
+    margin-top: -3%;
+    width: 50%;
+    margin-left: 15%;
+ }
+
+ #index .nav-links a{
+     font-size: 1rem;
+ }
+
+ #home-banner-img{margin-left: 10%;}
+
+ #login-header nav{
+    margin-left: -10%;
+    margin-top: unset;
+    position: absolute;
+    width: 100vw;
+
+    
+ }
+
+
+  #login-header #links-container{
+    width: 100vw;
+ }
+#about-header nav{margin-left: 10%;}
+#faq-header nav{margin-left: 10%;}
+#policy-header nav{margin-left: 10%; margin-top: 10% !important}
+#policy-header hr{margin-left: 20%;}
    @keyframes animatedBannerImg{
      
 
@@ -2783,6 +2830,28 @@ text-align: left;
     }
     
 } 
+
+@media(min-width: 1523px){
+    #index nav{
+ 
+       margin-top: -3%;
+       width: 50%;
+       
+    }
+
+    #index .nav-links a{
+        font-size: 1rem;
+    }
+
+    #login-header nav{
+       margin-left: 85%;
+       margin-top: unset;
+       position: absolute;
+       width: 100vw;
+    }
+
+   
+}
 
 @media only screen and (min-width: 2559px) {
     
