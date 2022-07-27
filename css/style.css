@@ -436,10 +436,20 @@ h1{
 		margin: 5%;
 	}
 
+    #login-form button[type="submit"]{
+        margin-left: 5%;
+    }
+
     .login-main .login-quote{
         text-align: center;
         display: block;
     }
+
+    .login-cta{
+        display: block;
+        text-align: center;
+    }
+
 
 	#checkbox{
 		margin-left: 5%;
@@ -451,8 +461,9 @@ h1{
 	}
 
 	#forgotPassword{
-		float: right;
+		
 		color: grey;
+        margin-left: 20%;
 	}
 
 	#submit{
@@ -470,6 +481,7 @@ h1{
 		font-family: "Montserrat";
 		font-weight: bold;
 		font-size: .8em;
+        padding: 5%;
 	}
 
 	.register-container span{
@@ -1317,6 +1329,14 @@ h1{
 
 @media only screen and (min-width: 374px) {
   
+    #forgotPassword{
+        margin-left: 35%;
+    }
+
+    .register-container a {
+        display: block;
+        margin-top: 1%;
+    }
     #shop-main-container h1{
         padding: 5%;
         letter-spacing: .01rem;
@@ -1370,7 +1390,26 @@ h1{
     }
 
  }
-            
+   
+ @media only screen and (min-width: 424px){
+    .login-main h1{
+       margin-left: unset;
+    }
+
+    .register-container p{
+        font-size: var(--medium-font-size);
+    }
+
+    .register-container span{
+        font-size: var(--small-font-size);
+    }
+
+    .register-container a{
+        font-size: .8rem;
+    }
+
+
+}
                   
           
 @media only screen and (min-width: 599px){
