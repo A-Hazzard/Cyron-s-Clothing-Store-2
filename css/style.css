@@ -1463,23 +1463,37 @@ h1{
    
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 767px)  {
-    hr{
-        margin-top: 5%;
-    }
+@media only screen and (min-width: 767px)  {  
+
+    #men-body hr{
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 15%;
+        display: none;
+        }
+
   nav{
-    margin-top: -8%;
-    margin-left: -8%;
+    margin-top: 1%;
+    margin-left: 75%;
+    width: 5%;
   }
+
+ #shopping-header #links-container a{
+font-size: 1.2rem !important;
+ }
+
+
 
   #login-body *{
     overflow: unset;
   }
+
     .login-main{
         width: 60%;
         margin: 5% auto;
         
     }
+
 
     .login-main h1{
         font-weight: bold;
@@ -1504,8 +1518,8 @@ h1{
 
     #myDropdown{
         display: unset;
-        margin-left: -85% !important;
-        width: 100%;
+        margin-left: -75% !important;
+        width: 80%;
     }
 
     
@@ -1514,18 +1528,16 @@ h1{
         display: none !important;
     }
 
-    .nav-links a{
-        font-size: 1.5rem;
+    #shopping-header .fa-user{
+        margin-left: -75%;
     }
 
+    
     #links-container{
         margin-left: 10% !important;
     }
 
-  
 
-   
-  
     .shop-banner img{
         width: 110%;
     }
@@ -1658,30 +1670,31 @@ h1{
     }
 
     #shop-main-container h1{
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .mini-nav{
-        font-size: 2rem;
-        margin-left: -40%;
+        font-size: 1.5rem;
+        margin-left: -56%;
     }
 
     #sort{
-        font-size: 2rem;
-    }
-
-    #form-control{
         font-size: 1.5rem;
     }
 
+    #form-control{
+        font-size: 1rem;
+    }
+
     .fa-user{
-        font-size: 3rem !important;
-        margin-top: 2%;
+        font-size: 2rem !important;
+        margin-top: -1%;
+        margin-left: -80%;
 }
 
-input, textarea{
-    width: 80%;
-}
+        input, textarea{
+            width: 80%;
+        }
 
     #store .img-container img{
         height: 15rem;
@@ -1710,6 +1723,7 @@ input, textarea{
 
       #home-container hr{
         margin-left: var(--hr-margin-left);
+      
       }
 
 	  .show a{
@@ -1717,9 +1731,7 @@ input, textarea{
 		
 	  }
 
-	  .fa-bars{
-		font-size: 5rem !important;
-	  }
+	
 
 	  #myDropdown{
 		margin-left: -35%;
@@ -1947,7 +1959,8 @@ input, textarea{
         font-size: var(--answer-font-size);
     }
 
-      } 
+
+} 
       
  
 /* Large devices (laptops/desktops, 992px and up) */
@@ -2094,12 +2107,15 @@ input, textarea{
       } 
     
 @media only screen and (min-width: 1023px){
-    hr{
-        margin-top: 6%;
-    }
+   #men-body *:not(.card), #women-body *:not(.card){
+    overflow: hidden;
+   }
+
     nav{
-        margin-top: -6%;
-        margin-left: unset;
+        display: unset;
+        margin-top: 15%;
+        margin-left: 5%;
+
       }
     
         .login-main{
@@ -2543,11 +2559,14 @@ text-align: left;
 }
 
 @media only screen and (min-width: 1439px) {
- 
- nav{
-    width: 100%;
-    margin-left: 88%;
- }
+    
+    #shop-main-container h1{margin-top: -4%;}
+    
+        nav{
+            margin-top: 55%;
+            margin-left: -40%;
+    
+          }
 
  hr{
     width: 50%;
