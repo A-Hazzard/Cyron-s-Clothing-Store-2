@@ -109,8 +109,10 @@ header{
 }
 
 .nav-links{
-    display: block;
-    position: relative;
+    display: flex; /* Change to flex for better control */
+    justify-content: space-between; /* Distribute space between nav items */
+    align-items: center; /* Center items vertically */
+    padding: 0 1em; /* Add some padding */
     
 }
 
@@ -118,6 +120,8 @@ header{
 .nav-links a{
     text-decoration: none;
     color: grey;
+    margin: 0 10px; /* Add some space around each link */
+    font-size: 1em; /* Set a base font size */
 }
 
 
@@ -1473,7 +1477,13 @@ h1{
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 767px)  {  
+    .nav-links {
+        justify-content: center; /* Center items for larger screens */
+    }
 
+    .nav-links a {
+        font-size: 1.2em; /* Increase font size for better visibility */
+    }
     #men-body hr, #contact-body hr{
         width: 50%;
         margin-left: 25%;
@@ -2161,7 +2171,13 @@ h1{
         margin-left: 5%;
 
       }
+      .nav-links {
+        padding: 0 2em; /* Increase padding for larger screens */
+    }
 
+    .nav-links a {
+        font-size: 1.5em; /* Further increase font size */
+    }
       #shopping-header nav{margin-left: -5%;}
      
         .login-main{
@@ -2556,7 +2572,7 @@ text-align: left;
    #index nav{
     margin-top: -3%;
     width: 50%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
  }
 
  #index .nav-links a{
@@ -2644,8 +2660,6 @@ text-align: left;
     
         nav{
             margin-top: 55%;
-            margin-left: -40%;
-    
           }
 
  hr{
